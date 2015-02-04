@@ -20,4 +20,5 @@ Upload the site files somewhere, and enjoy!
 
 ## To-dos
 
+- More mobile-friendly interface / media query breakpoints.
 - Port over all of the reporting tools from the original parser!
