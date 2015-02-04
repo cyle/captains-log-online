@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Captain's Log</title>
+<link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="log.css" />
+</head>
+<body>
+<div class="container">
+
+<h1>Captain's Log Format</h1>
+
+<p><a href="./">&laquo; back to today's log</a></p>
+
+<h2>Activities List Format</h2>
+
+<p>For every discreet activity you perform, start a new line!</p>
+
+<p>For each of those activities, each on a separate single line, you can include the following:</p>
+
+<ul>
+<li>If you put a dash (-) and then a space at the start of the line, the parser will ignore it. It just makes the list easier for you to read, so feel free to use it.</li>
+<li>The time spent doing the thing, in brackets, for time tracking. Examples: [1 hour] or [1h30m] or [9:00am - 1:00pm] or [9am to 11am]. All of those are valid and will be parsed.</li>
+<li>A Footprints Help Desk ticket ID or RFC ID (from the Change Management workspace) associated with it, enclosed in curly braces. Regular old Help Desk tickets can look like this: {#27654} or {27654}, but RFCs you need to prefix with "RFC" like so: {RFC#282} or {RFC252}.</li>
+<li>If you include the word "meeting" in the line item, the time will also count as a meeting!</li>
+</ul>
+
+<p>An example:</p>
+
+<pre>- worked on a ticket [1 hour] {27762}
+- change management meeting, lots of fun [20 mins]
+- did something that required no time!
+- finished up a project {RFC#200}
+- weekly meeting lasted forever [2h15m]</pre>
+
+<h2>Notes Format</h2>
+
+<p>Your notes can be in any format you want; they're not parsed, only stored for later reference.</p>
+
+</div>
+</body>
+</html>
